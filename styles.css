@@ -20,7 +20,7 @@ header {
     margin: 0;
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 1280px;
+    flex-basis: 1000px;
 }
 nav {
     display: flex;
@@ -28,11 +28,10 @@ nav {
     justify-content: space-between;
 }
 header .logo{
-    margin-right: auto;
-    
     color: #f9faf8;
     font-size: 24px;
     font-weight: 900;
+    margin-right: auto;
 
 }
 header ul{
@@ -41,28 +40,30 @@ header ul{
     flex-direction: row;
     padding: 0;
     margin: 0;
-
     font-size: 18px;
     color: #e5e7eb;
     gap: 20px;
 }
 .title-box{
     display:flex;
+    gap: 20px;
+
+    background-color: #1f2937;
+
     margin: 100px 0px;
+    flex: 1;
 }
 
 .title-text{
-    margin: 0px;
-
     color: #f9faf8;
     font-size: 48px;
     font-weight: 900;
+    margin: 0px;
 }
 .subtitle-text{
-    margin: 0;
-    
     color: #e5e7eb;
     font-size: 18px;
+    margin: 0;
 }
 
 .title-box .sign-up{
@@ -71,4 +72,16 @@ header ul{
     border: none;
     border-radius: 5px;
     padding: 5px 30px;
+    margin-top: 10px;
+}
+
+.title-box-left {
+    min-width: 0;
+    flex: 1 1 400px;
+}
+.title-thumbnail {
+    /*aspect-ratio: 4/3;*/
+    width: 400px;
+    min-width: 0;
+    flex: 0 1 auto;
 }
